@@ -22,7 +22,7 @@ architecture rtl of counter is
 
 signal clki: std_logic;
 --signal reset: std_logic;
-signal cnt: std_logic_vector(5 downto 0):="000011";
+signal cnt: std_logic_vector(5 downto 0):="000011"; -- means store 6 bytes vector, 000011 = 3 as binary  
 
 begin
 clki<=clk;
@@ -33,7 +33,7 @@ process (clki)
     --if rst='1' then
 	--cnt<=(others=>'3');
     --else
-	if (clki'event and clki = '1') then
+	if (clki'event and clki = '1') then -- 'event means a change in a digital signal'
 	   cnt <= cnt + 1;
 		if (cnt=53) then cnt<=conv_std_logic_vector(3, 6); 
 		end if;
