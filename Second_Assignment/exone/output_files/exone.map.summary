@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Jan 06 00:35:50 2019
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : exone
+Top-level Entity Name : exone
+Family : Cyclone IV E
+Total logic elements : 108
+    Total combinational functions : 105
+    Dedicated logic registers : 50
+Total registers : 50
+Total pins : 11
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
