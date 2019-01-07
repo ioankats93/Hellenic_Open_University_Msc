@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "GPIO_2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[8]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[9]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO_2[10]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
