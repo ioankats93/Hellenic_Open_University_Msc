@@ -16,10 +16,10 @@ When running the program, the servo will move from -90 degrees to +90 degrees an
 Implement a circuit that includes the DHT11 temperature / humidity sensor as well as the TMP36. Connect to a wifi network with ESP8266. Build your own account and channel in the thingspeak.
 In your channel must be seen the underlying:
 
-A) temperature from the DHT11 sensor.  
-B) temperature from the TMP36 sensor.  
-C) the temperature difference of the two sensors.  
-D) Moisture from the DHT11 sensor.  
+__A)__ Temperature from the DHT11 sensor.  
+__B)__ Temperature from the TMP36 sensor.  
+__C)__ The temperature difference of the two sensors.  
+__D)__ Moisture from the DHT11 sensor.  
 
 All of the above data, except for the channel of thingspeak, we want to appear on the serial console.
 
