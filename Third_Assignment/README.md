@@ -1,4 +1,11 @@
 
+### Exercise 1
+Write the assembly code of the ARM processor (Cortex M3) for the following tasks :
+
+__a)__   Calculates the average number (integer) of a 32bit data structure. The numbers are located in a data area, the starting point of which is at the address _*seq*_ . The length of the data area is not known. So the average computation will stop when _*0x00*_ is entered.
+
+__b)__  Implement a median filter with windows size of __3__. The value sequence _(32 bit integers)_ of inputs is addressed at _*src*_ location. The results are going to be stored at _*dest*_ location. 
+
 ### Exercise 2
 Implement a circuit that includes a tactile switch, servo motor, ldr resistor and an external led.  
 
