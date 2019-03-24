@@ -1,0 +1,135 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             CopyBlock, CODE, READONLY
+    2 00000000                 EXPORT           main
+    3 00000000 00000000 
+                       count   EQU              0
+    4 00000000 00000000 
+                       sum     EQU              0
+    5 00000000                 ENTRY
+    6 00000000         
+    7 00000000         main
+    8 00000000 4808            LDR              r0, =seq
+    9 00000002 F04F 0100       MOV              r1, #count
+   10 00000006 F04F 0200       MOV              r2, #sum
+   11 0000000A         avg
+   12 0000000A F850 3B04       LDR              r3, [r0], #4
+   13 0000000E F101 0101       ADD              r1, r1, #1  ; count
+   14 00000012 441A            ADD              r2, r2, r3  ;sum
+   15 00000014         ;SDIV r4, r2, r1 ;Compute Avg  | Should get 1, 5, 7
+   16 00000014 F093 0F00       TEQ              R3, #0x00
+   17 00000018 D1F7            BNE              avg
+   18 0000001A F1A1 0101       SUB              r1, r1, #1
+   19 0000001E FB92 F4F1       SDIV             r4, r2, r1
+   20 00000022 DF11    stop    SWI              0x11
+   21 00000024         
+   22 00000024         
+   23 00000024         
+   24 00000024 00000000        AREA             Block, DATA, READWRITE
+   25 00000000 00000001 
+              00000009 
+              0000000B 
+              00000000 
+              0000000B seq     DCD              1,9,11,0x00, 11 ; Last number s
+                                                            hould not be comput
+                                                            ed on average  put 
+                                                            it here just to saw
+                                                             you that is workin
+                                                            g
+   26 00000014                 END
+Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
+ork --depend=.\objects\exef.d -o.\objects\exef.o -I.\RTE\_Target_1 -IC:\Keil_v5
+\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include -IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.
+4.0\Device\ARM\ARMCM3\Include --predefine="__EVAL SETA 1" --predefine="__UVISIO
+N_VERSION SETA 527" --predefine="_RTE_ SETA 1" --predefine="ARMCM3 SETA 1" --li
+st=.\listings\exef.lst exef.s
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+CopyBlock 00000000
+
+Symbol: CopyBlock
+   Definitions
+      At line 1 in file exef.s
+   Uses
+      None
+Comment: CopyBlock unused
+avg 0000000A
+
+Symbol: avg
+   Definitions
+      At line 11 in file exef.s
+   Uses
+      At line 17 in file exef.s
+Comment: avg used once
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 7 in file exef.s
+   Uses
+      At line 2 in file exef.s
+Comment: main used once
+stop 00000022
+
+Symbol: stop
+   Definitions
+      At line 20 in file exef.s
+   Uses
+      None
+Comment: stop unused
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Block 00000000
+
+Symbol: Block
+   Definitions
+      At line 24 in file exef.s
+   Uses
+      None
+Comment: Block unused
+seq 00000000
+
+Symbol: seq
+   Definitions
+      At line 25 in file exef.s
+   Uses
+      At line 8 in file exef.s
+Comment: seq used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Absolute symbols
+
+count 00000000
+
+Symbol: count
+   Definitions
+      At line 3 in file exef.s
+   Uses
+      At line 9 in file exef.s
+Comment: count used once
+sum 00000000
+
+Symbol: sum
+   Definitions
+      At line 4 in file exef.s
+   Uses
+      At line 10 in file exef.s
+Comment: sum used once
+2 symbols
+344 symbols in table
