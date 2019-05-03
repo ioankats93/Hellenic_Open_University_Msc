@@ -2,7 +2,7 @@
 ### Exercise 1
 In ARLab, you can only practice with elements already connected to the Arduino board. Therefore, in the first question of this assignment, an alarm system using PIR, Ultrasonic and Gas sensors (not present in ARLab) is requested in the tinkercad, the components of which are shown in the figure below.
 
-![alt text]
+![alt text](https://github.com/ioankats93/Hellenic_Open_University_Msc/blob/master/Fourth_Assignment/readme_images/Screen%20Shot%202019-05-03%20at%2017.55.52.png)
 
 
 
