@@ -21,7 +21,7 @@ Use the ARL system at 194.24.226.110 and create a server that will provide a web
 
 ### Exercise 4
 Use the ARL system at 194.24.226.110 to connect through the Ethernet network using the W5100 shield. Build your own account (of course you can use the account you opened for the implementation of Exercise 3 of GE3) and channel (new) in thingspeak and program the system to portray:
-__A)__ the temperature value obtained by the DHT22 sensor   
-__B)__ the value of the moisture obtained from the DHT22 sensor 
+__A)__ the temperature value obtained by the DHT22 sensor.     
+__B)__ the value of the moisture obtained from the DHT22 sensor.     
 
 All of the above data, in addition to the thingspeak channel, should also be displayed on the serial console and on the LCD screen. Also, on the console, we want to display the IP address of the thingspeak server that your system connects to when you start the code.
