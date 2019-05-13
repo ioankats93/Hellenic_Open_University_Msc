@@ -17,7 +17,12 @@ In other words, your code will read two analog values ​​and display them on 
 
 
 ### Exercise 3
-Use the ARL system at 194.24.226.110 and create a server that will provide a web page with a graphic command button.It will light up and turn off the blue LED connected to the system. You can implement a button that will make a transition to the led state (toggle), or two buttons that one will turn on and the other will turn off the led.
+Use the ARL system at 194.24.226.110 and create a server that will provide a web page with a graphic command button. It will light up and turn off the blue LED connected to the system. You can implement a button that will make a transition to the led state (toggle), or two buttons that one will turn on and the other will turn off the led.
+
+The ARL Diagram : 
+
+![alt text](https://github.com/ioankats93/Hellenic_Open_University_Msc/blob/master/Fourth_Assignment/readme_images/arl_diagram.png)
+
 
 ### Exercise 4
 Use the ARL system at 194.24.226.110 to connect through the Ethernet network using the W5100 shield. Build your own account (of course you can use the account you opened for the implementation of Exercise 3 of GE3) and channel (new) in thingspeak and program the system to portray:   
