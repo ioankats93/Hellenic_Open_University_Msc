@@ -15,6 +15,9 @@ __C)__ It will keep the readings constant for 5 minutes to prevent you get a scr
 __D)__ Turns off both the screen and both 7segment after the end of the above time
 In other words, your code will read two analog values ​​and display them on the 7-segment and LCD screen, which will then go off. This is required to do it only once.  
 
+The Diagram : 
+![alt text](https://github.com/ioankats93/Hellenic_Open_University_Msc/blob/master/Fourth_Assignment/readme_images/Screen%20Shot%202019-05-07%20at%2001.24.27.png)
+
 
 ### Exercise 3
 Use the ARL system at 194.24.226.110 and create a server that will provide a web page with a graphic command button. It will light up and turn off the blue LED connected to the system. You can implement a button that will make a transition to the led state (toggle), or two buttons that one will turn on and the other will turn off the led.
