@@ -26,7 +26,7 @@ int i = 0; // hold temperature number in hex
 int d = 0; //decade counter
 
 void setup() {
-  Serial.begin(9600);
+  Serial.begin(57600);
   // set up the LCD's number of columns and rows:
   lcd.begin(16, 2);
   lcd.clear();

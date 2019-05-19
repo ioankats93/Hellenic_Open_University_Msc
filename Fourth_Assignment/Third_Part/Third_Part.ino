@@ -1,6 +1,4 @@
 //open serial monitor to see what the arduino receives
-//use the \ slash to escape the " in the html
-//address will look like http://192.168.1.102:84/ when submited
 //W5100 based ethernet shield is used
 
 #include <SPI.h>
@@ -28,14 +26,14 @@ void setup(){
   server.begin();
 
   //enable serial data print
-  Serial.begin(9600);
+  Serial.begin(57600);
   Serial.println("Ioannis Katsikavelas - 3rd exercise from fourth assignment\n");
   Serial.println("Server Started"); // so I can keep track of what is loaded
   Serial.print("The IP is : ");
   Serial.println(Ethernet.localIP());
   Serial.print("\nPlease visit\t");
-  Serial.print(Ethernet.localIP());Serial.print(":");Serial.print("84\t");
-  Serial.println("to control the outputs on the board");
+  Serial.print(Ethernet.localIP());
+  Serial.println("  to control the outputs on the board");
   Serial.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
 }
 
